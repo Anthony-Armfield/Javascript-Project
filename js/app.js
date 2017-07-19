@@ -19,12 +19,16 @@ var summaryLocationText = document.createTextNode(resumeData.summary.location);
 summaryLocation.appendChild(summaryLocationText);
 
 var summaryPhone = document.getElementById('phone');
-var summaryPhoneText = document.createTextNode(resumeData.summary.phone);
-summaryPhone.appendChild(summaryPhoneText);
+var summaryPhoneLink = document.createElement('a');
+summaryPhoneLink.setAttribute('href', 'tel:1-' + resumeData.summary.phone);
+summaryPhoneLink.appendChild(document.createTextNode(resumeData.summary.phone));
+summaryPhone.appendChild(summaryPhoneLink);
 
 var summaryEmail = document.getElementById('email');
-var summaryEmailText = document.createTextNode(resumeData.summary.email);
-summaryEmail.appendChild(summaryEmailText);
+var summaryEmailLink = document.createElement('a');
+summaryEmailLink.setAttribute('href', 'mailto:' + resumeData.summary.email);
+summaryEmailLink.appendChild(document.createTextNode(resumeData.summary.email));
+summaryEmail.appendChild(summaryEmailLink);
 /*-- /Summary --*/
 
 /*-- Skills --*/
