@@ -6,7 +6,10 @@ hr {
   margin: 30px 5%;
   border: 1px solid rgba(0, 0, 255, 0.3);
 }
-.glyphicon {color: blue;}
+.glyphicon {
+	color: blue;
+	margin-right: 10px;
+}
 
 
 /*-- Contact --*/
